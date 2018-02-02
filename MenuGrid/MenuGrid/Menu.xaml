@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuGrid.Menu">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="#585858"  Padding="0,50,0,0">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Menu" FontAttributes="Bold" FontSize="Large" TextColor="White" />
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <StackLayout>
+                        <Label Text="Mensajes"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <StackLayout>
+                        <Label Text="Llamadas"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <StackLayout>
+                        <Label Text="Contactos"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

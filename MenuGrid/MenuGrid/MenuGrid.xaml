@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Main menú"
+             x:Class="MenuGrid.MenuGrid">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="#585858"  Padding="0,50,0,0">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Menu" FontAttributes="Bold" FontSize="Large" TextColor="White" />
+                    
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="#04B4AE">
+                    <StackLayout>
+                        <Label Text="Mensajes"/>
+                        <Image Source="message.png" WidthRequest="100" HeightRequest="100"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="#0080FF">
+                    <StackLayout>
+                        <Label Text="Llamadas"/>
+                        <Image Source="calliconpng.png" WidthRequest="100" HeightRequest="100"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2" BackgroundColor="#0B3861">
+                    <StackLayout>
+                        <Label Text="Contactos"/>
+                        <Image Source="contactos.png" WidthRequest="100" HeightRequest="100"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="#0101DF">
+                    <StackLayout>
+                        <!--<Label Text="Facebook"/>-->
+                        <Image Source="facebook.png"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="#01A9DB">
+                    <StackLayout>
+                        <!--<Label Text="Xamarin"/>-->
+                        <Image Source="xamarin.png"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0" BackgroundColor="#DF7401">
+                    <StackLayout>
+                        <!--<Label Text="Mensajes"/>-->
+                        <Image Source="git.png"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="#01DF3A">
+                    <StackLayout>
+                        <!--<Label Text="Mensajes"/>-->
+                        <Image Source="twitter.png"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            
+        </Grid>
+    </ScrollView>
+</ContentPage>
